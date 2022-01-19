@@ -8,15 +8,14 @@ public class Calculator {
     	
     	String output = "";
     	
-    	// passing in int array
-    	// extract each int from array, assign to new values
+    	// passing in int[] array
+    	// extract each int[] from array, assign to new values
     	
     	int a = numberList[0];
     	int b = numberList[1];
     	int c = numberList[2];
  
     	// conditional logic
-    	
     	if (a + b == c) {
     		output += a + " + " + b + " = " + c + ". ";
     	} 

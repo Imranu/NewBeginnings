@@ -86,5 +86,10 @@ public class DoggoTest {
 		}
     }
 
+    @Test
+    public void testEight() {
+    	assertTrue(this.newTest.placement(25).contains("54th"));
+    }
+   
 }
 
