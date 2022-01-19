@@ -1,6 +1,7 @@
 package com.qa.test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -64,6 +65,25 @@ public class DoggoTest {
         assertEquals(
                 "ERROR", this.newTest.placement(101));
 
+    }
+    
+    @Test
+	public void altTest() {
+    	this.newTest.placement(2);
+		if (this.newTest.basePlacements.contains("2nd") == false) {
+			boolean check = true;
+			assertTrue(check);
+		}
+	}
+    
+    @Test
+    public void consecutiveTest() {
+    	this.newTest.placement(2);
+    	this.newTest.placement(3);
+		if (this.newTest.basePlacements.contains("3rd") == false && this.newTest.basePlacements.contains("2nd") == true) {
+			boolean check = true;
+			assertTrue(check);
+		}
     }
 
 }
