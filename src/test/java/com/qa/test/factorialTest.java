@@ -38,4 +38,9 @@ public class factorialTest {
     public void test6() {
         assertEquals("18 = NONE", this.facty.calculate(18));
     }
+    
+    @Test
+    public void test7() {
+    	assertEquals("121 = NONE", this.facty.calculate(121));
+    }
 }
